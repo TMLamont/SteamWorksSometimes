@@ -33,7 +33,7 @@ public class DriveSystem extends Subsystem {
 		ControllerLeft2.changeControlMode(CANTalon.TalonControlMode.Follower); //makes the controllers followers
 		ControllerRight2.changeControlMode(CANTalon.TalonControlMode.Follower);
 		
-		ControllerLeft2.set(ControllerLeft1.getDeviceID()); //telles them who to follow
+		ControllerLeft2.set(ControllerLeft1.getDeviceID()); //tells them who to follow
 		ControllerRight2.set(ControllerRight1.getDeviceID());
 		
 		steamDrive = new RobotDrive(ControllerLeft1, ControllerRight1); //makes the drive
